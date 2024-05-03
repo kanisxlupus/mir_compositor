@@ -1,0 +1,3 @@
+/home/sam/Projects/mir_compositor/cmake-build/CMakeFiles/helloWorld.dir
+/home/sam/Projects/mir_compositor/cmake-build/CMakeFiles/edit_cache.dir
+/home/sam/Projects/mir_compositor/cmake-build/CMakeFiles/rebuild_cache.dir
