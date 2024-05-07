@@ -1,0 +1,3 @@
+/home/sam/Projects/canonical_takehome/mir_compositor/cmake-build/CMakeFiles/mirComp.dir
+/home/sam/Projects/canonical_takehome/mir_compositor/cmake-build/CMakeFiles/edit_cache.dir
+/home/sam/Projects/canonical_takehome/mir_compositor/cmake-build/CMakeFiles/rebuild_cache.dir
