@@ -214,6 +214,9 @@ CMakeFiles/mirComp.dir/main.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/miral/miral/append_event_filter.h \
+ /usr/include/miral/miral/external_client.h \
+ /usr/include/miral/miral/keymap.h \
  /usr/include/miral/miral/minimal_window_manager.h \
  /usr/include/miral/miral/window_management_policy.h \
  /usr/include/mircore/mir/geometry/displacement.h \
@@ -235,4 +238,27 @@ CMakeFiles/mirComp.dir/main.cpp.o: \
  /usr/include/c++/13/bits/ranges_algo.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/mircore/mir_toolkit/events/enums.h \
- /usr/include/miral/miral/set_window_management_policy.h
+ /usr/include/miral/miral/set_window_management_policy.h \
+ /usr/include/miral/miral/toolkit_event.h \
+ /usr/include/xkbcommon/xkbcommon.h \
+ /usr/include/xkbcommon/xkbcommon-names.h \
+ /usr/include/xkbcommon/xkbcommon-keysyms.h \
+ /usr/include/xkbcommon/xkbcommon-compat.h /usr/include/linux/input.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/linux/input-event-codes.h
