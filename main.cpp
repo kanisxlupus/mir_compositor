@@ -1,6 +1,8 @@
 // main.cpp
 
 // Includes used in hello world example
+#include <miral/command_line_option.h>
+#include <miral/internal_client.h>
 #include <miral/runner.h>
 #include <miral/append_event_filter.h>
 #include <miral/external_client.h>
@@ -20,7 +22,7 @@ int main(int argc, char const* argv[])
 	
 	ExternalClientLauncher extClientLauncher;
 
-	auto const keyboard_shortcuts = [&](MirEvent const* event)
+	auto const keyboardShortcuts = [&](MirEvent const* event)
 	{
 		// Check to see if there was an input event
 		if (mir_event_get_type(event) != mir_event_type_input)
@@ -69,7 +71,7 @@ int main(int argc, char const* argv[])
 			{
 				set_window_management_policy<MinimalWindowManager>(),
 				extClientLauncher,
-				AppendEventFilter{keyboard_shortcuts},
+				AppendEventFilter{keyboardShortcuts},
 				Keymap{},
 			});
 }
