@@ -69,28 +69,28 @@ include CMakeFiles/mirComp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mirComp.dir/flags.make
 
-CMakeFiles/mirComp.dir/main.cpp.o: CMakeFiles/mirComp.dir/flags.make
-CMakeFiles/mirComp.dir/main.cpp.o: /home/sam/Projects/canonical_takehome/mir_compositor/main.cpp
-CMakeFiles/mirComp.dir/main.cpp.o: CMakeFiles/mirComp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sam/Projects/canonical_takehome/mir_compositor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mirComp.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirComp.dir/main.cpp.o -MF CMakeFiles/mirComp.dir/main.cpp.o.d -o CMakeFiles/mirComp.dir/main.cpp.o -c /home/sam/Projects/canonical_takehome/mir_compositor/main.cpp
+CMakeFiles/mirComp.dir/mircomp.cpp.o: CMakeFiles/mirComp.dir/flags.make
+CMakeFiles/mirComp.dir/mircomp.cpp.o: /home/sam/Projects/canonical_takehome/mir_compositor/mircomp.cpp
+CMakeFiles/mirComp.dir/mircomp.cpp.o: CMakeFiles/mirComp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sam/Projects/canonical_takehome/mir_compositor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mirComp.dir/mircomp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mirComp.dir/mircomp.cpp.o -MF CMakeFiles/mirComp.dir/mircomp.cpp.o.d -o CMakeFiles/mirComp.dir/mircomp.cpp.o -c /home/sam/Projects/canonical_takehome/mir_compositor/mircomp.cpp
 
-CMakeFiles/mirComp.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mirComp.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/Projects/canonical_takehome/mir_compositor/main.cpp > CMakeFiles/mirComp.dir/main.cpp.i
+CMakeFiles/mirComp.dir/mircomp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/mirComp.dir/mircomp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sam/Projects/canonical_takehome/mir_compositor/mircomp.cpp > CMakeFiles/mirComp.dir/mircomp.cpp.i
 
-CMakeFiles/mirComp.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mirComp.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/Projects/canonical_takehome/mir_compositor/main.cpp -o CMakeFiles/mirComp.dir/main.cpp.s
+CMakeFiles/mirComp.dir/mircomp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/mirComp.dir/mircomp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sam/Projects/canonical_takehome/mir_compositor/mircomp.cpp -o CMakeFiles/mirComp.dir/mircomp.cpp.s
 
 # Object files for target mirComp
 mirComp_OBJECTS = \
-"CMakeFiles/mirComp.dir/main.cpp.o"
+"CMakeFiles/mirComp.dir/mircomp.cpp.o"
 
 # External object files for target mirComp
 mirComp_EXTERNAL_OBJECTS =
 
-mirComp: CMakeFiles/mirComp.dir/main.cpp.o
+mirComp: CMakeFiles/mirComp.dir/mircomp.cpp.o
 mirComp: CMakeFiles/mirComp.dir/build.make
 mirComp: CMakeFiles/mirComp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sam/Projects/canonical_takehome/mir_compositor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable mirComp"

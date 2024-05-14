@@ -4,7 +4,7 @@
 - Weston: `sudo apt install weston`
 - Qt's Wayland support: `sudo apt install qtwayland5`
 - FreeType2: `sudo apt-get install libfreetype-dev libfreetype6 libfreetype6-dev`
--  
+
 
 
 # Installation Instructions

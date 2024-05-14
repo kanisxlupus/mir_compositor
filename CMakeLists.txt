@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FindPkgConfig)
 pkg_check_modules(MIRAL miral REQUIRED)
 
-add_executable(mirComp main.cpp)
+add_executable(mirComp mircomp.cpp)
 
 target_include_directories(mirComp PUBLIC SYSTEM ${MIRAL_INCLUDE_DIRS})
 target_link_libraries(		mirComp				${MIRAL_LDFLAGS})

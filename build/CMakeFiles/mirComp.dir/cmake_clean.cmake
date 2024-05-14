@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mirComp.dir/main.cpp.o"
-  "CMakeFiles/mirComp.dir/main.cpp.o.d"
+  "CMakeFiles/mirComp.dir/mircomp.cpp.o"
+  "CMakeFiles/mirComp.dir/mircomp.cpp.o.d"
   "mirComp"
   "mirComp.pdb"
 )
