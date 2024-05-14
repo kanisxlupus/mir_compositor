@@ -1,6 +1,5 @@
 // main.cpp
 
-// Includes used in hello world example
 #include <miral/runner.h>
 #include <miral/append_event_filter.h>
 #include <miral/external_client.h>
@@ -8,8 +7,13 @@
 #include <miral/minimal_window_manager.h>
 #include <miral/set_window_management_policy.h>
 #include <miral/toolkit_event.h>
+#include <miral/window_manager_tools.h>
+#include <miral/window.h>
 
 #include <linux/input.h>
+#include <iostream>
+#include <sys/types.h>
+#include <signal.h>
 
 using namespace miral;
 using namespace miral::toolkit;
@@ -19,8 +23,24 @@ int main(int argc, char const* argv[])
 	MirRunner runner{argc, argv};
 	
 	ExternalClientLauncher extClientLauncher;
+	
+	bool startupLaunched = false;
 
-	auto const keyboard_shortcuts = [&](MirEvent const* event)
+	auto const startupActions = [&](MirEvent const* event)
+	{
+		if (!startupLaunched)
+		{
+			extClientLauncher.launch("gedit README.md"); 
+			extClientLauncher.launch("weston-terminal");
+			startupLaunched = true;
+			return true;
+		}
+		
+		return false;
+	};
+
+	
+	auto const keyboardShortcuts = [&](MirEvent const* event)
 	{
 		// Check to see if there was an input event
 		if (mir_event_get_type(event) != mir_event_type_input)
@@ -59,6 +79,14 @@ int main(int argc, char const* argv[])
 			case KEY_T:
 				extClientLauncher.launch("weston-terminal");
 				return true;
+			
+			// Open the README again
+			case KEY_H:
+				extClientLauncher.launch("gedit README.md");
+				return true;
+		
+			case KEY_C:
+				extClientLauncher.launch("gnome-chess");
 
 			default:
 				return false;
@@ -69,7 +97,8 @@ int main(int argc, char const* argv[])
 			{
 				set_window_management_policy<MinimalWindowManager>(),
 				extClientLauncher,
-				AppendEventFilter{keyboard_shortcuts},
-				Keymap{},
+				AppendEventFilter{startupActions},
+				AppendEventFilter{keyboardShortcuts},
+				Keymap{},	
 			});
 }

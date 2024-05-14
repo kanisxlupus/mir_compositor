@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/mirComp.dir/main.cpp.o -o mirComp  -L/usr/lib/x86_64-linux-gnu -lmiral -lmircommon -lmircore 
+/usr/bin/c++ CMakeFiles/mirComp.dir/mircomp.cpp.o -o mirComp  -L/usr/lib/x86_64-linux-gnu -lmiral -lmircommon -lmircore 

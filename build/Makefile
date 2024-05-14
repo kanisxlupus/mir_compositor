@@ -129,29 +129,29 @@ mirComp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/build
 .PHONY : mirComp/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+mircomp.o: mircomp.cpp.o
+.PHONY : mircomp.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/main.cpp.o
-.PHONY : main.cpp.o
+mircomp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/mircomp.cpp.o
+.PHONY : mircomp.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+mircomp.i: mircomp.cpp.i
+.PHONY : mircomp.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/main.cpp.i
-.PHONY : main.cpp.i
+mircomp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/mircomp.cpp.i
+.PHONY : mircomp.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+mircomp.s: mircomp.cpp.s
+.PHONY : mircomp.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/main.cpp.s
-.PHONY : main.cpp.s
+mircomp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mirComp.dir/build.make CMakeFiles/mirComp.dir/mircomp.cpp.s
+.PHONY : mircomp.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mirComp"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... mircomp.o"
+	@echo "... mircomp.i"
+	@echo "... mircomp.s"
 .PHONY : help
 
 
