@@ -1,5 +1,5 @@
 # Overview
-Mcomp is a lightweight mir-based compositor. It was developed on a Ubuntu machine using C++, Bash scripting, CMake, and Neovim. 
+mirComp is a lightweight mir-based compositor. It was developed on a Ubuntu machine using C++, Bash scripting, CMake, and Neovim. 
 
 # Installation, Building, and Running
 ## Additional Dependencies
