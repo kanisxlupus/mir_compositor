@@ -5,7 +5,6 @@ Mcomp is a lightweight mir-based compositor. It was developed on a Ubuntu machin
 ## Additional Dependencies
 - Weston: `sudo apt install weston`
 - Qt's Wayland support: `sudo apt install qtwayland5`
-- FreeType2: `sudo apt-get install libfreetype-dev libfreetype6 libfreetype6-dev`
 
 ## Build Instructions
 Run the bash script `./build.sh`
