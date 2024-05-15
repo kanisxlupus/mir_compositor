@@ -1,6 +1,11 @@
 # Overview
 mirComp is a lightweight mir-based compositor. It was developed on an Ubuntu machine using C++, Bash scripting, CMake, and Neovim. 
 
+# Installation, Building, and Running
+## Additional Dependencies
+- Weston: `sudo apt install weston`
+- Qt's Wayland support: `sudo apt install qtwayland5`
+
 # Setup
 ## Build Instructions
 Run the bash script `./build.sh`
