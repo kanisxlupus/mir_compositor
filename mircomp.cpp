@@ -30,8 +30,7 @@ int main(int argc, char const* argv[])
 	{
 		if (!startupLaunched)
 		{
-			extClientLauncher.launch("gedit README.md"); 
-			extClientLauncher.launch("weston-terminal");
+			extClientLauncher.launch("open quickStartGuide.pdf"); 
 			startupLaunched = true;
 			return true;
 		}
@@ -82,7 +81,7 @@ int main(int argc, char const* argv[])
 			
 			// Open the README again
 			case KEY_H:
-				extClientLauncher.launch("gedit README.md");
+				extClientLauncher.launch("open quickStartGuide.pdf");
 				return true;
 		
 			case KEY_C:

@@ -1,13 +1,10 @@
 # Overview
-Mcomp is a lightweight mir-based compositor. It was developed on a Ubuntu machine using C++, Bash scripting, CMake, and Neovim. 
+mirComp is a lightweight mir-based compositor. It was developed on an Ubuntu machine using C++, Bash scripting, CMake, and Neovim. 
 
-# Installation, Building, and Running
-## Additional Dependencies
-- Weston: `sudo apt install weston`
-- Qt's Wayland support: `sudo apt install qtwayland5`
-
+# Setup
 ## Build Instructions
 Run the bash script `./build.sh`
+This will check for and install all dependencies and build the program.
 
 ## Run Instructions
 Run the bash script `./run.sh`
@@ -17,7 +14,7 @@ Run the bash script `./run.sh`
 - Open Weston terminal with Ctrl + Alt + Shift + T
 - Open the Help document with Ctrl + Alt + H
 - Open Gnome Chess with Ctrl + Alt + C
-- Open other programs from the Weston terminal (ie., gedit, gnome-chess, etc)
+- Open other programs from the Weston terminal 
 - Close the compositor with Ctrl + Alt + Bksp
 
 # Development Process
